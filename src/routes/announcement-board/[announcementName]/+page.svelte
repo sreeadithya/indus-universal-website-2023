@@ -27,8 +27,25 @@
         html = html.concat(
           blockTag +
             announcementData.data.blocks[key].data.text +
-            blockClosingTag +
-            "<br>"
+            blockClosingTag
+        );
+        html = html.replace("<a", "<a target='_blank'");
+      }
+
+      if (blockType == "attaches") {
+        html = html.concat(
+          `<button onclick='window.open("${announcementData.data.blocks[key].data.file.url}")'>${announcementData.data.blocks[key].data.title}</button>` +
+            "</button>"
+        );
+      }
+
+      if (blockType == "image") {
+        html = html.concat(
+          `<img src='${announcementData.data.blocks[key].data.file.url}")'>` +
+            "</img>" +
+            "<p> caption: " +
+            announcementData.data.blocks[key].data.caption +
+            "</p>"
         );
       }
 
@@ -38,8 +55,7 @@
         html = html.concat(
           blockTag +
             announcementData.data.blocks[key].data.text +
-            blockClosingTag +
-            "<br>"
+            blockClosingTag
         );
       }
 
@@ -50,8 +66,7 @@
           html = html.concat(
             blockTag +
               announcementData.data.blocks[key].data.items[itemKey] +
-              blockClosingTag +
-              "<br>"
+              blockClosingTag
           );
         }
       }
@@ -109,3 +124,5 @@
   <hr />
   <div>{@html html}</div>
 </main>
+
+<img src="" alt="" />
