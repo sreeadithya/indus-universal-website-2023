@@ -1,7 +1,7 @@
 <script>
   import { app, db } from "../firebase";
   import { onMount } from "svelte";
-  import { ref, set, get, child, remove } from "firebase/database";
+  import { ref, set, get, child, remove } from "/firebase/database";
 
   let announcements;
   let announcementsTitles = [];
