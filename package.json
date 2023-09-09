@@ -20,6 +20,8 @@
   "type": "module",
   "dependencies": {
     "@tailwindcss/typography": "^0.5.10",
-    "firebase": "^10.3.0"
+    "firebase": "^10.3.0",
+    "mailtoui": "1.0.3",
+    "notyf": "^3.10.0"
   }
 }
