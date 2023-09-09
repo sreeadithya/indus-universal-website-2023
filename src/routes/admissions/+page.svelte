@@ -20,9 +20,15 @@
 
   <h1 class="text-lg">admission form</h1>
 
-  <form netlify name="admission form">
-    damns
-    <input type="text" name="" id="" />
-    <button type="submit"> submit </button>
+  <form name="admission form" netlify>
+    <p>
+      <label>Name <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Email <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
   </form>
 </main>
