@@ -26,11 +26,15 @@
 
   <!-- ignore all errors its just a11y crying and whining about some accessability errors -->
 
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
   <dialog
     bind:this={dialog}
     on:close={() => (showModal = false)}
     on:click|self={() => dialog.close()}
   >
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div on:click|stopPropagation>
       <h2 class="text-lg">email options</h2>
       <ol>
