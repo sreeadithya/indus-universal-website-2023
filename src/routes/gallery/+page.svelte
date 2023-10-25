@@ -32,7 +32,7 @@
 </script>
 
 <main>
-  <div class="overflow-auto w-[95vw] mt-3">
+  <div class="overflow-auto w-[95vw] mt-3 p-5">
     <div class="masonry">
       {#each albumTitles as i}
         <div class="masonry-item bg-white relative h-max">

@@ -1,5 +1,6 @@
 <main>
   <div class="flex flex-row gap-10">
+    <a href="/">home</a>
     <a href="/admissions">admissions</a>
     <a href="/school-departments">school departments</a>
     <a href="/gallery">gallery</a>
